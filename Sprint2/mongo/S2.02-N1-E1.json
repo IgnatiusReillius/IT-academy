@@ -1,0 +1,108 @@
+[
+    {
+        "_id": { 
+            "$oid": "65100a1f1a23d45f7c001001" 
+        },
+        "name": "Marta González",
+        "address": "Right Street, 123",
+        "telephone": "678921235",
+        "email": "marta.gonzalez@hotmail.com",
+        "register_date": "23/09/2023",
+        "shoppings": [
+            {
+                "brand": "Rayban",
+                "graduation": {
+                    "left": 2.3,
+                    "right": 2.0
+                },
+                "glass color": {
+                    "left": "transparent",
+                    "right": "transparent"
+                },
+                "frame type": "metallic",
+                "price": 127.0,
+                "purchase_date": "23/09/2023"
+            },
+            {
+                "brand": "Oakley",
+                "graduation": {
+                    "left": 2.3,
+                    "right": 2.0
+                },
+                "glass color": {
+                    "left": "blue",
+                    "right": "blue"
+                },
+                "frame type": "plastic",
+                "price": 110.5,
+                "purchase_date": "11/02/2024"
+            }
+        ]
+    },
+    {
+        "_id": { 
+            "$oid": "65100a1f1a23d45f7c001002" 
+        },
+        "name": "Carlos Pérez",
+        "address": "Liberty Ave, 45",
+        "telephone": "611445578",
+        "email": "carlos.perez@email.com",
+        "register_date": "11/06/2022",
+        "shoppings": [
+            {
+                "brand": "Gucci",
+                "graduation": {
+                    "left": 1.8,
+                    "right": 1.5
+                },
+                "glass color": {
+                    "left": "transparent",
+                    "right": "transparent"
+                },
+                "frame type": "metallic",
+                "price": 250.0,
+                "purchase_date": "15/06/2022"
+            }
+        ]
+    },
+    {
+        "_id": { 
+            "$oid": "65100a1f1a23d45f7c001003" 
+        },
+        "name": "Laura Sánchez Castillo",
+        "address": "Sunset Blvd, 89",
+        "telephone": "623998877",
+        "email": "laura.sanchez@gmail.com",
+        "register_date": "01/12/2021",
+        "shoppings": [
+            {
+                "brand": "Prada",
+                "graduation": {
+                    "left": 3.0,
+                    "right": 3.3
+                },
+                "glass color": {
+                    "left": "green",
+                    "right": "green"
+                },
+                "frame type": "metallic",
+                "price": 300.0,
+                "purchase_date": "15/12/2021"
+            },
+            {
+                "brand": "Rayban",
+                "graduation": { 
+                    "left": 2.8, 
+                    "right": 3.0
+                },
+                "glass_color": { 
+                    "left": "gray", 
+                    "right": "gray" 
+                },
+                "frame_type": "Plastic",
+                "price": 150.0,
+                "purchase_date": "10/05/2022"
+            }
+        ]
+    }
+]

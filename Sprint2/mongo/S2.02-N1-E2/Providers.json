@@ -1,0 +1,22 @@
+[    
+    {
+        "_id": { 
+            "$oid": "6520a1f1a23d45f7c009999di"
+        },
+        "name": "Googles Associated SL",
+        "address": "Carrer Major 45, Barcelona",
+        "telephone": "933112233",
+        "email": "info@googles-associated.com",
+        "contact_person": "Ana López"
+    },
+    {
+        "_id": { 
+            "$oid": "6520a1f1a23d45f7c009999dj"
+        },
+        "name": "Amazon Market",
+        "address": "Diagonal 111, Madrid",
+        "telephone": "969321757",
+        "email": "amazon@nofake.com",
+        "contact_person": "Julián Garrido"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "_id": {
+            "$oid": "6520a1f1a23d45f7c001100"
+        },
+        "brand_name": "Rayban",
+        "frame": "metallic",
+        "provider_ID": {
+            "$oid": "6520a1f1a23d45f7c009999di"
+        },
+        "price": 105.75,
+        "brought_by": [
+            { "client_id":"65100a1f1a23d45f7c001001" },
+            { "client_id":"65100a1f1a23d45f7c001002" },
+            { "client_id":"65100a1f1a23d45f7c001003" }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6520a1f1a23d45f7c001101"
+        },
+        "brand_name": "Gucci",
+        "frame": "metallic",
+        "provider_ID": {
+            "$oid": "6520a1f1a23d45f7c009999dj"
+        },
+        "price": 250,
+        "brought_by": [
+            { "client_id":"65100a1f1a23d45f7c001002" }
+        ]
+    }
+]
