@@ -25,7 +25,7 @@ db.RestaurantTests.find({ $nor: [{ borough: "Staten Island"}, { borough: "Queens
 db.RestaurantTests.find({ }).sort({ name: 1})
 db.RestaurantTests.find({ }).sort({ name: -1})
 db.RestaurantTests.find({ }).sort({ cuisine: 1, borough: -1})
-RestaurantDB> db.RestaurantTests.find({ "address.street": null }, { name: 1, address: 1})
+db.RestaurantTests.find({ "address.street": null }, { name: 1, address: 1})
 // Seleccionar documents on el valor de coordinate és de tipus Double. Mostrar el name, restaurant_id i coordinades
 // Mostrar restaurant_id, name i grade per restaurants amb marcador divisible per 7 (resta 0)
 db.RestaurantTests.find({ name: /.*mon.*/ }, { name: 1, borough: 1, "location.coordinates": 1, cuisine: 1})
