@@ -1,6 +1,6 @@
 <?php
     class Bar {
-        private array $tables = [];
+        private array $tables = [], $reservedTables = [];
         private string $name;
         private const ITS_FULL = "Lo siento, estamos completos." . PHP_EOL;
         private const ASK_PEOPLE = "¿Quiere realizar una reserva? Dígame para cuántas personas." . PHP_EOL;
@@ -46,9 +46,16 @@
             $reserveName = $this->askForReserveName();
             $phoneNumber = $this->askForPhoneNumber();
             $this->tables[$tableIndex]->makeReserved($reserveName, $phoneNumber);
+
+            $this->reservedTables[] = $this->tables[$tableIndex];
             
             echo self::ITS_OK . $reserveName . PHP_EOL;
-            print_r($this->tables);
+            //print_r($this->tables);
+            print_r($this->reservedTables);
+        }
+
+        public function goToBar() : void {
+            echo "Te veniste";
         }
 
         private function askForPeopleNumber() : int {
@@ -67,11 +74,11 @@
 
         private function askForPhoneNumber() : string {
             $phoneNumber = readline(self::ASK_NUMBER);
-            do {
-                if(strlen($phoneNumber) != 9 || !ctype_digit($phoneNumber)) {
+            if(strlen($phoneNumber) != 9 || !ctype_digit($phoneNumber)) {
+                do {
                     $phoneNumber = readline("Lo siento, deme un número de teléfono de 9 cifras.");
-                }
-            } while (strlen($phoneNumber) != 9 || !ctype_digit($phoneNumber));
+                } while (strlen($phoneNumber) != 9 || !ctype_digit($phoneNumber));
+            }
             return $phoneNumber;
         }
 
